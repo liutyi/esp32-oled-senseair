@@ -128,7 +128,7 @@ WiFi.begin((char*)ssid, (char*)pass);
 while (WiFi.status() != WL_CONNECTED) {
 delay(4000);
 offlineSensor(); //Offline Display
-
+}
 // Blynk init
 // Blynk.begin(auth, ssid, pass, host, 8080);
 Blynk.begin(auth, ssid, pass);
