@@ -126,7 +126,7 @@ display.display();
 
 WiFi.begin((char*)ssid, (char*)pass);
 while (WiFi.status() != WL_CONNECTED) {
-delay(4000);
+delay(2000);
 offlineSensor(); //Offline Display
 }
 // Blynk init
@@ -143,7 +143,7 @@ void loop() {
 if (WiFi.status() != WL_CONNECTED)
 {
 Serial.println("No connect");
-delay(4000);
+delay(2000);
 if (millis() - lastConnectionAttempt >= connectionDelay)
 {
 lastConnectionAttempt = millis();
